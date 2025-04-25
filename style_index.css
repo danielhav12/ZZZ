@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(140, 228, 123);
+}
+
+.nav_odkazy {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.nav_odkazy a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    background-color: rgb(255, 0, 0);
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto 2.5rem;
+}
+
+/*učivo*/
+
+.info {
+margin-top: 5rem;
+text-align: center;
+}
+
+.předmět .dva_s {
+max-width: 40vw;
+}
+
+.předmět .jeden_s {
+    width: 60vw;
+}
+
+.předmět {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+}
+
+.fotky p {
+font-size: 1.2rem;
+text-align: center;
+margin: 1rem 0;
+}
+
+.fotky {
+display: grid;
+grid-template-columns: 1fr 1fr;
+row-gap: 2rem;
+margin: 4.5rem auto;
+}
+
+.hry_buttons {
+position: fixed;
+z-index: 1000;
+top: 15px;
+right: 15px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 60%;
+}
+
+.hra_b {
+text-decoration: none;
+color: white;
+background-color: rgb(255, 0, 0);
+padding: 1rem;
+border-radius: 5px;
+}
+
+.mezník {
+font-size: 2rem;
+font-weight: bolder;
+text-align: center;
+}
+
+hr {
+border: none;
+background-color: rgb(7, 80, 0);
+height: 2px;
+}
+
+span {
+color: rgb(255, 0, 0);
+font-style: italic;
+}
+
+/*hra - výběr*/
+
+.button_výběr {
+    display: block;
+    border: none;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.další_výběr {
+    display: block;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+}
+
+/*hra*/
+
+#image {
+    display: block;
+    margin: 3rem auto;
+}
+
+#feedback {
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#guessForm {
+    display: block;
+    width: 15rem;
+    margin: auto;
+}
+
+#guessInput {
+    height: 2rem;
+    width: 15rem;
+    border-color: black;
+    border-radius: 5px;
+    font-size: medium;
+    padding-left: 10px;
+}
+
+.hrací_b {
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    font-size: medium;
+}
+
+#kontrola {
+    background-color: rgb(7, 80, 0);
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#další {
+    display: block;
+    background-color: rgb(255, 0, 0);
+    margin: auto;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/*nav*/
+
+#mobile-nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgb(7, 80, 0);
+    color: white;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+  
+#mobile-nav.active {
+    left: 0;
+}
+
+#mobile-nav ul {
+    list-style: none;
+    margin: 80px 0 0 .5rem;
+}
+
+#mobile-nav ul li {
+    margin: 2rem 0;
+}
+
+#mobile-nav ul li a {
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+    padding: 8px 30px;
+}
+  
+  #menu-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    color: white;
+    z-index: 1100;
+    padding: 2px 8px 0;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 0, 0);
+}
