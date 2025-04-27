@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgb(140, 228, 123);
+    background-color: rgb(176, 253, 160);
 }
 
 .nav_odkazy {
@@ -197,7 +197,7 @@ font-style: italic;
 }
 
 #mobile-nav ul li {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 #mobile-nav ul li a {
