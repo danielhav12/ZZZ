@@ -4,9 +4,11 @@ function getParam(name) {
 }
 
 const akce = getParam('akce');
+let images = null;
+
 
 if (akce === "a") {
-  const images = [
+  images = [
     { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
     { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
     { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
@@ -28,7 +30,7 @@ if (akce === "a") {
     { src: 'https://i.postimg.cc/BZhMbbqm/v-clavka-obecn.webp', name: 'václavka' },
     { src: 'https://i.postimg.cc/02TGKJh0/ampion-pe-rka-poln.webp', name: 'žampion' }];
 } else if (akce === "b") {
-  const images = [
+ images = [
     { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
     { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
     { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
