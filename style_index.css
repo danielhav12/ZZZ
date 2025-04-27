@@ -54,7 +54,7 @@ align-items: center;
 .fotky p {
 font-size: 1.2rem;
 text-align: center;
-margin: 1rem 0;
+margin: .5rem 0;
 }
 
 .fotky {
@@ -64,14 +64,15 @@ row-gap: 2rem;
 margin: 4.5rem auto;
 }
 
+
 .hry_buttons {
 position: fixed;
 z-index: 1000;
 top: 15px;
-right: 15px;
+right: 25px;
 display: flex;
 flex-direction: row;
-justify-content: space-between;
+justify-content: flex-end;
 width: 60%;
 }
 
@@ -82,6 +83,9 @@ background-color: rgb(255, 0, 0);
 padding: 1rem;
 border-radius: 5px;
 border: none;
+margin-left: 1rem;
+font-weight: bold;
+font-size: medium;
 }
 
 .mezník {
