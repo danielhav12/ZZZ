@@ -1,5 +1,34 @@
+function getParam(name) {
+  const params = new URLSearchParams(window.location.search);
+  return params.get(name);
+}
 
-const images = [
+const akce = getParam('akce');
+
+if (akce === "a") {
+  const images = [
+    { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
+    { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
+    { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
+    { src: 'https://i.postimg.cc/tgPMVjrY/holubinka-jahodov.webp', name: 'holubinka jahodová' },
+    { src: 'https://i.postimg.cc/XJk1Qg6W/h-ib-kov.webp', name: 'hřib kovář' },
+    { src: 'https://i.postimg.cc/zBrPCcMp/h-ib-satan.webp', name: 'hřib satan' },
+    { src: 'https://i.postimg.cc/3NrS6D3v/h-ib-smrkov.webp', name: 'hřib smrkový' },
+    { src: 'https://i.postimg.cc/nrdRtcLw/kluzek-sli-n.webp', name: 'klouzek' },
+    { src: 'https://i.postimg.cc/28697vcp/kotr-kade-av.webp', name: 'kotrč' },
+    { src: 'https://i.postimg.cc/59pkzpmq/koz-k-b-ezov.webp', name: 'kozák' },
+    { src: 'https://i.postimg.cc/wjRWSzY0/k-emen-osikov.webp', name: 'křemenáč' },
+    { src: 'https://i.postimg.cc/L6bCCXwJ/li-ka-obecn.webp', name: 'liška' },
+    { src: 'https://i.postimg.cc/1zxWSd9P/mochom-rka-erven.webp', name: 'muchomůrka červená' },
+    { src: 'https://i.postimg.cc/DzqxwcZG/mochom-rka-r-ovka.webp', name: 'muchomůrka růžovka' },
+    { src: 'https://i.postimg.cc/hjcpz7z5/mochom-rka-zelen.webp', name: 'muchomůrka zelená' },
+    { src: 'https://i.postimg.cc/j5cvzdyd/ryzec-kravsk.webp', name: 'ryzec kravský' },
+    { src: 'https://i.postimg.cc/Rq53hwq3/ryzec-pravy.webp', name: 'ryzec pravý' },
+    { src: 'https://i.postimg.cc/hvGsMW08/babka-h-ib-lutomas.webp', name: 'babka' },
+    { src: 'https://i.postimg.cc/BZhMbbqm/v-clavka-obecn.webp', name: 'václavka' },
+    { src: 'https://i.postimg.cc/02TGKJh0/ampion-pe-rka-poln.webp', name: 'žampion' }];
+} else if (akce === "b") {
+  const images = [
     { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
     { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
     { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
@@ -31,6 +60,7 @@ const images = [
     { src: 'https://i.postimg.cc/59kS1r3G/suchoh-ib-hn-d.webp', name: 'suchohřib hnědý' },
     { src: 'https://i.postimg.cc/L6YBsVQs/pi-ka-obecn.webp', name: 'špička' }
   ];
+}
   
   let currentImage = null;
   

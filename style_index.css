@@ -214,8 +214,12 @@ font-style: italic;
     font-size: 24px;
     color: white;
     z-index: 1100;
-    padding: 2px 8px 0;
+    padding: 8px 8px 3px;
     border-radius: 10px;
     border: none;
     background-color: rgb(255, 0, 0);
+}
+
+#menu-toggle img {
+    margin: auto;
 }
