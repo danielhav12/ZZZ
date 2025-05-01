@@ -3,6 +3,10 @@ function getParam(name) {
   return params.get(name);
 }
 
+function prvníVelké(text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
 const akce = getParam('akce');
 let images = null;
 
@@ -99,7 +103,7 @@ if (akce === "a") {
       document.getElementById('feedback').textContent = 'Správně!';
       document.getElementById('guessInput').value = '';
     } else {
-      document.getElementById('feedback').textContent = `Špatně je to ${currentImage.name}`;
+      document.getElementById('feedback').textContent = `Špatně je to ${prvníVelké(currentImage.name)}`;
       document.getElementById('feedback').style.color = 'rgb(255, 0, 0)';
       document.getElementById("guessInput").style.display = "none";
       document.getElementById("kontrola").style.display = "none";
