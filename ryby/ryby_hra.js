@@ -1,72 +1,21 @@
-function getParam(name) {
-  const params = new URLSearchParams(window.location.search);
-  return params.get(name);
-}
 
 function prvníVelké(text) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
-const akce = getParam('akce');
-let images = null;
+const images = [
+  { src: 'https://i.postimg.cc/vTvhtppw/cand-t.webp' , name: 'candát'},
+  { src: 'https://i.postimg.cc/fys5Xwqv/cejn.webp' , name: 'cejn'},
+  { src: 'https://i.postimg.cc/jjW8Y3Jy/kapr.webp' , name: 'kapr'},
+  { src: 'https://i.postimg.cc/PxY2PLyx/karas.webp' , name: 'karas'},
+  { src: 'https://i.postimg.cc/4xxLBxfL/lin.webp' , name: 'lín'},
+  { src: 'https://i.postimg.cc/kgYjZPDn/okoun.webp' , name: 'okoun'},
+  { src: 'https://i.postimg.cc/pXZcfFH5/pstruh.webp' , name: 'pstruh'},
+  { src: 'https://i.postimg.cc/XN9zvP18/sumec.webp' , name: 'sumec'},
+  { src: 'https://i.postimg.cc/7YDQJNpy/tika.webp' , name: 'štika'},
+  { src: 'https://i.postimg.cc/D0QjYW4D/ho.webp' , name: 'úhoř'}
+];
 
-
-if (akce === "a") {
-  images = [
-    { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
-    { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
-    { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
-    { src: 'https://i.postimg.cc/tgPMVjrY/holubinka-jahodov.webp', name: 'holubinka jahodová' },
-    { src: 'https://i.postimg.cc/XJk1Qg6W/h-ib-kov.webp', name: 'hřib kovář' },
-    { src: 'https://i.postimg.cc/zBrPCcMp/h-ib-satan.webp', name: 'hřib satan' },
-    { src: 'https://i.postimg.cc/3NrS6D3v/h-ib-smrkov.webp', name: 'hřib smrkový' },
-    { src: 'https://i.postimg.cc/nrdRtcLw/kluzek-sli-n.webp', name: 'klouzek' },
-    { src: 'https://i.postimg.cc/28697vcp/kotr-kade-av.webp', name: 'kotrč' },
-    { src: 'https://i.postimg.cc/59pkzpmq/koz-k-b-ezov.webp', name: 'kozák' },
-    { src: 'https://i.postimg.cc/wjRWSzY0/k-emen-osikov.webp', name: 'křemenáč' },
-    { src: 'https://i.postimg.cc/L6bCCXwJ/li-ka-obecn.webp', name: 'liška' },
-    { src: 'https://i.postimg.cc/1zxWSd9P/mochom-rka-erven.webp', name: 'muchomůrka červená' },
-    { src: 'https://i.postimg.cc/DzqxwcZG/mochom-rka-r-ovka.webp', name: 'muchomůrka růžovka' },
-    { src: 'https://i.postimg.cc/hjcpz7z5/mochom-rka-zelen.webp', name: 'muchomůrka zelená' },
-    { src: 'https://i.postimg.cc/j5cvzdyd/ryzec-kravsk.webp', name: 'ryzec kravský' },
-    { src: 'https://i.postimg.cc/Rq53hwq3/ryzec-pravy.webp', name: 'ryzec pravý' },
-    { src: 'https://i.postimg.cc/hvGsMW08/babka-h-ib-lutomas.webp', name: 'babka' },
-    { src: 'https://i.postimg.cc/BZhMbbqm/v-clavka-obecn.webp', name: 'václavka' },
-    { src: 'https://i.postimg.cc/02TGKJh0/ampion-pe-rka-poln.webp', name: 'žampion' }];
-} else if (akce === "b") {
- images = [
-    { src: 'https://i.postimg.cc/xTcgzQ8n/bedla-vysok.webp', name: 'Bedla' },
-    { src: 'https://i.postimg.cc/sx0cN6nk/hadovka-smrdut.webp', name: 'Hadovka' },
-    { src: 'https://i.postimg.cc/QdvzttJ2/hnojn-k-obecn.webp', name: 'Hnojník' },
-    { src: 'https://i.postimg.cc/tgPMVjrY/holubinka-jahodov.webp', name: 'holubinka jahodová' },
-    { src: 'https://i.postimg.cc/XJk1Qg6W/h-ib-kov.webp', name: 'hřib kovář' },
-    { src: 'https://i.postimg.cc/zBrPCcMp/h-ib-satan.webp', name: 'hřib satan' },
-    { src: 'https://i.postimg.cc/3NrS6D3v/h-ib-smrkov.webp', name: 'hřib smrkový' },
-    { src: 'https://i.postimg.cc/nrdRtcLw/kluzek-sli-n.webp', name: 'klouzek' },
-    { src: 'https://i.postimg.cc/28697vcp/kotr-kade-av.webp', name: 'kotrč' },
-    { src: 'https://i.postimg.cc/59pkzpmq/koz-k-b-ezov.webp', name: 'kozák' },
-    { src: 'https://i.postimg.cc/wjRWSzY0/k-emen-osikov.webp', name: 'křemenáč' },
-    { src: 'https://i.postimg.cc/L6bCCXwJ/li-ka-obecn.webp', name: 'liška' },
-    { src: 'https://i.postimg.cc/1zxWSd9P/mochom-rka-erven.webp', name: 'muchomůrka červená' },
-    { src: 'https://i.postimg.cc/DzqxwcZG/mochom-rka-r-ovka.webp', name: 'muchomůrka růžovka' },
-    { src: 'https://i.postimg.cc/hjcpz7z5/mochom-rka-zelen.webp', name: 'muchomůrka zelená' },
-    { src: 'https://i.postimg.cc/j5cvzdyd/ryzec-kravsk.webp', name: 'ryzec kravský' },
-    { src: 'https://i.postimg.cc/Rq53hwq3/ryzec-pravy.webp', name: 'ryzec pravý' },
-    { src: 'https://i.postimg.cc/hvGsMW08/babka-h-ib-lutomas.webp', name: 'babka' },
-    { src: 'https://i.postimg.cc/BZhMbbqm/v-clavka-obecn.webp', name: 'václavka' },
-    { src: 'https://i.postimg.cc/02TGKJh0/ampion-pe-rka-poln.webp', name: 'žampion' },
-    { src: 'https://i.postimg.cc/bNWg05Sb/echranka-podvinut.webp', name: 'čechratka' },
-    { src: 'https://i.postimg.cc/vBYtHFCR/ir-vka-fialov.webp', name: 'čirůvka fialová' },
-    { src: 'https://i.postimg.cc/TPqc6Y7q/ir-vka-m-jovka.webp', name: 'čirůvka májovka' },
-    { src: 'https://i.postimg.cc/BnFgmC2z/hl-va-st-i-n.webp', name: 'hlíva' },
-    { src: 'https://i.postimg.cc/W4P7CJn1/holubinka-hl-no-lut.webp', name: 'holubinka hlínožlutá' },
-    { src: 'https://i.postimg.cc/MHX0V0Wd/holubinka-namodral.webp', name: 'holubinka namodralá' },
-    { src: 'https://i.postimg.cc/JnpcsYWs/holubinka-nazelenal.webp', name: 'holubinka nazelenalá' },
-    { src: 'https://i.postimg.cc/0j3Yf6jx/p-chavka-obecn.webp', name: 'pýchavka' },
-    { src: 'https://i.postimg.cc/59kS1r3G/suchoh-ib-hn-d.webp', name: 'suchohřib hnědý' },
-    { src: 'https://i.postimg.cc/L6YBsVQs/pi-ka-obecn.webp', name: 'špička' }
-  ];
-}
   
   let currentImage = null;
   
