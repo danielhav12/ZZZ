@@ -172,7 +172,7 @@ font-style: italic;
     font-weight: bold;
 }
 
-#další {
+#další,#znovu {
     background-color: rgb(255, 0, 0);
     margin: auto;
     margin-top: 1rem;

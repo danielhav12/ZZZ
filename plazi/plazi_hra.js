@@ -25,6 +25,8 @@ const images = [
       document.getElementById('feedback').style.color = 'rgb(7, 80, 0)';
       document.getElementById('feedback').style.marginTop = '4rem';
       document.getElementById('feedback').textContent = 'Šikulka už víš všechno!\u{1F92B}\u{1F9CF}';
+      document.getElementById("znovu").style.display = "inline";
+      document.getElementById("další").style.display = "none";
       return;
     }
 
