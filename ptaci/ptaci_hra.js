@@ -29,7 +29,7 @@ if (akce === "a") {
     { src: 'https://i.postimg.cc/gr9SgV03/racek.webp', name: 'racek' },
     { src: 'https://i.postimg.cc/8CwYTfyV/sojka-obecn.webp', name: 'sojka' },
     { src: 'https://i.postimg.cc/bvqMX99T/sokol.webp', name: 'sokol' },
-    { src: 'https://i.postimg.cc/7Z8d9kCj/sova.webp', name: 'sova' },
+    { src: 'https://i.postimg.cc/V6S7QrkY/sovap.webp', name: 'sova' },
     { src: 'https://i.postimg.cc/br4MKXmD/straka.webp', name: 'straka' },
     { src: 'https://i.postimg.cc/15NbDtzp/strakapoud-velk.webp', name: 'strakapoud' },
     { src: 'https://i.postimg.cc/W3Wxwqr7/s-kora-ko-adra.webp', name: 'sýkora koňadra' },
