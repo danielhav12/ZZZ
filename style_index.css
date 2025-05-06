@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgb(176, 253, 160);
+    background-color: rgb(133, 226, 114);
 }
 
 .nav_odkazy {
@@ -39,18 +39,24 @@ margin-right: .5rem;
 }
 
 .předmět .dva_s {
-max-width: 40vw;
+    width: 40vw;
+    margin-top: .5rem;
 }
 
 .předmět .jeden_s {
     width: 60vw;
+    margin-top: .5rem;
 }
 
 .předmět {
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
-align-items: center;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(0, 61, 0);
+    background-color: rgb(149, 245, 141);
 }
 
 .fotky p {
@@ -63,9 +69,8 @@ margin: .5rem 1rem;
 display: grid;
 grid-template-columns: 1fr 1fr;
 row-gap: 2rem;
-margin: 4.5rem auto;
+margin: 4.5rem .5rem;
 }
-
 
 .hry_buttons {
 position: fixed;
