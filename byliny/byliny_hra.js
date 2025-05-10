@@ -116,26 +116,26 @@ if (akce === "a") {
   { src: 'https://i.postimg.cc/rmKM7qf9/vrani-oko-ctyrlstei.webp', name: ['vraní oko'] },
   { src: 'https://i.postimg.cc/s2fV9YSq/vrbka-uzkolista.webp', name: ['vrbka'] },
   { src: 'https://i.postimg.cc/wjpx38B6/zvonek-rozkladity.webp', name: ['zvonek'] },
-    { src: 'https://i.postimg.cc/B6Dwjyb0/bojinek-lucni.webp', name: ['bojínek'] },
-    { src: 'https://i.postimg.cc/MKYN0hDZ/cernys-hajni.webp', name: ['černýš'] },
-    { src: 'https://i.postimg.cc/Z5KgwV78/durman-obecny.webp', name: ['durman'] },
-    { src: 'https://i.postimg.cc/ncxNDHqw/jaternik-podleska.webp', name: ['jaterník'] },
-    { src: 'https://i.postimg.cc/2yQJKJNw/koniklec-lucni.webp', name: ['koniklec'] },
-    { src: 'https://i.postimg.cc/T2gZ1y5D/lebeda-rozkladita.webp', name: ['lebeda'] },
-    { src: 'https://i.postimg.cc/fynp5spy/lnice-kvetel.webp', name: ['lnice'] },
-    { src: 'https://i.postimg.cc/k4tLxGjL/locika-kompasov.webp', name: ['locika'] },
-    { src: 'https://i.postimg.cc/dVHfprpz/mochna-husi.webp', name: ['mochna'] },
-    { src: 'https://i.postimg.cc/q7F9hyG8/naprstn-k-velkokvety.webp', name: ['náprstník'] },
-    { src: 'https://i.postimg.cc/9f06QJym/ostrice-obecna.webp', name: ['ostřice'] },
-    { src: 'https://i.postimg.cc/Mp6khWTj/pryskyrnik-prudky.webp', name: ['pryskyřník'] },
-    { src: 'https://i.postimg.cc/BQc9Y8q0/prysec-kolovratec.webp', name: ['pryšec'] },
-    { src: 'https://i.postimg.cc/y6RzRQtW/ptacinec-prostredni.webp', name: ['ptačinec'] },
-    { src: 'https://i.postimg.cc/rs5XLsx5/pupava-bezlodyzna.webp', name: ['pupava'] },
-    { src: 'https://i.postimg.cc/WbPcwmc8/rozrazil-l-ka-sk.webp', name: ['rozrazil'] },
-    { src: 'https://i.postimg.cc/NM9vpp0J/rulik-zlomocny.webp', name: ['rulík'] },
-    { src: 'https://i.postimg.cc/Kc3mNvkG/stulik-zluty.webp', name: ['stulík'] },
-    { src: 'https://i.postimg.cc/CKvwvRs1/vlastovicnik-vetsi.webp', name: ['vlaštovičník'] },
-    { src: 'https://i.postimg.cc/9QYm784y/vratic-obecn.webp', name: ['vratič'] }
+  { src: 'https://i.postimg.cc/B6Dwjyb0/bojinek-lucni.webp', name: ['bojínek'] },
+  { src: 'https://i.postimg.cc/MKYN0hDZ/cernys-hajni.webp', name: ['černýš'] },
+  { src: 'https://i.postimg.cc/Z5KgwV78/durman-obecny.webp', name: ['durman'] },
+  { src: 'https://i.postimg.cc/ncxNDHqw/jaternik-podleska.webp', name: ['jaterník'] },
+  { src: 'https://i.postimg.cc/2yQJKJNw/koniklec-lucni.webp', name: ['koniklec'] },
+  { src: 'https://i.postimg.cc/T2gZ1y5D/lebeda-rozkladita.webp', name: ['lebeda'] },
+  { src: 'https://i.postimg.cc/fynp5spy/lnice-kvetel.webp', name: ['lnice'] },
+  { src: 'https://i.postimg.cc/k4tLxGjL/locika-kompasov.webp', name: ['locika'] },
+  { src: 'https://i.postimg.cc/dVHfprpz/mochna-husi.webp', name: ['mochna'] },
+  { src: 'https://i.postimg.cc/q7F9hyG8/naprstn-k-velkokvety.webp', name: ['náprstník'] },
+  { src: 'https://i.postimg.cc/9f06QJym/ostrice-obecna.webp', name: ['ostřice'] },
+  { src: 'https://i.postimg.cc/Mp6khWTj/pryskyrnik-prudky.webp', name: ['pryskyřník'] },
+  { src: 'https://i.postimg.cc/BQc9Y8q0/prysec-kolovratec.webp', name: ['pryšec'] },
+  { src: 'https://i.postimg.cc/y6RzRQtW/ptacinec-prostredni.webp', name: ['ptačinec'] },
+  { src: 'https://i.postimg.cc/rs5XLsx5/pupava-bezlodyzna.webp', name: ['pupava'] },
+  { src: 'https://i.postimg.cc/WbPcwmc8/rozrazil-l-ka-sk.webp', name: ['rozrazil'] },
+  { src: 'https://i.postimg.cc/NM9vpp0J/rulik-zlomocny.webp', name: ['rulík'] },
+  { src: 'https://i.postimg.cc/Kc3mNvkG/stulik-zluty.webp', name: ['stulík'] },
+  { src: 'https://i.postimg.cc/CKvwvRs1/vlastovicnik-vetsi.webp', name: ['vlaštovičník'] },
+  { src: 'https://i.postimg.cc/9QYm784y/vratic-obecn.webp', name: ['vratič'] }
   ];
 }
   
@@ -166,7 +166,7 @@ if (akce === "a") {
     e.preventDefault();
     const userGuess = document.getElementById('guessInput').value.trim().toLowerCase();
   
-    if (images.name.includes(userGuess)) {
+    if (images.some(img => img.name.includes(userGuess))) {
       const indexToRemove = images.findIndex(img => img.name === currentImage.name);
       images.splice(indexToRemove, 1);
       document.getElementById("guessInput").style.display = "none";
