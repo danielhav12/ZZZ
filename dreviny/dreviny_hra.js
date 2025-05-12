@@ -110,8 +110,8 @@ if (akce === "a") {
     document.getElementById("kontrola").style.display = "inline";
     const randomIndex = Math.floor(Math.random() * images.length);
     currentImage = images[randomIndex];
-    document.getElementById('image').src = currentImage.src[1];
-    document.getElementById('image2').src = currentImage.src[2];
+    document.getElementById('image').src = currentImage.src[2];
+    document.getElementById('image2').src = currentImage.src[1];
   }
   
   document.getElementById('guessForm').addEventListener('submit', function (e) {
