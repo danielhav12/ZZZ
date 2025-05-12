@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style_index.css">
     <title>Dřeviny</title>
+    <style>
+        .obrazky {
+            display: flex;
+            margin:3rem auto;
+            gap: 0px;
+            justify-content: center;
+        }
+        .obrazky img {
+            margin: 0px;
+            width: 40%;
+            height: auto;
+            object-fit: scale-down;
+        }
+        #image {
+            margin: 0px;
+        }
+        
+    </style>
 </head>
 <body>
     <button id="menu-toggle"><img src="../menu-burger.svg" alt=""></button>
@@ -22,9 +40,11 @@
         </ul>
     </nav>
 
-    <img src="" alt="Obrázek houby" id="image" width="150">
-    <img src="" alt="Obrázek houby" id="image2" width="150">
-    
+    <div class="obrazky">
+    <img src="" alt="Obrázek" id="image">
+    <img src="" alt="Obrázek" id="image2">
+    </div>
+
     <p id="feedback"></p>
         
     <form id="guessForm" autocomplete="off">
