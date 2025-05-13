@@ -5,7 +5,7 @@ function prvníVelké(text) {
 
 const images = [
   { src: 'https://i.postimg.cc/PqN7rr0p/colek.webp' , name: 'čolek'},
-  { src: 'https://i.postimg.cc/FRLn3Crh/jesterka-obecna.webp' , name: 'ješterka obecná'},
+  { src: 'https://i.postimg.cc/FRLn3Crh/jesterka-obecna.webp' , name: 'ještěrka obecná'},
   { src: 'https://i.postimg.cc/3w6cyQHL/jesterka-zivoroda.webp' , name: 'ještěrka živorodá'},
   { src: 'https://i.postimg.cc/g2g5W6tb/mlok.webp' , name: 'mlok'},
   { src: 'https://i.postimg.cc/BnSykCgC/ropucha.webp' , name: 'ropucha'},
