@@ -4,7 +4,7 @@ const images = [
     { src: 'https://i.postimg.cc/W3KB0ZPc/bouzov-hrad.webp', name: 'Hrad Bouzov' },
     { src: 'https://i.postimg.cc/cHrqKm2c/brno-pilberk.webp', name: 'Špilberk v Brně' },
     { src: 'https://i.postimg.cc/wMLGJbVD/brno-vila-tugendhat.webp', name: 'Vila Tugendhat v Brně'},
-    { src: "https://i.postimg.cc/438kNMLd/buchlov-hrad.webp" , name: "Hrad Bouchlov"},
+    { src: "https://i.postimg.cc/438kNMLd/buchlov-hrad.webp" , name: "Hrad Buchlov"},
     { src: "https://i.postimg.cc/4xQRjnpp/esk-bud-jovice-n-m-st-ern-v.webp" , name: "Náměstí s Černou věží v Českých Budějovicích"},
     { src: "https://i.postimg.cc/hPxBb2jy/esk-krumlov-z-mek-m-sto.webp" , name: "Zámek a město Český Krumlov"},
     { src: "https://i.postimg.cc/5yYPJKGZ/cheb-pal-ek.webp" , name: "Špalíček v Chebu"},
